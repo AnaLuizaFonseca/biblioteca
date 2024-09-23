@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos</title>
+    <link rel="stylesheet" href="favoritos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+</head>
+<body>
+    <button onclick="goBack()"style="background-color: transparent;">
+        <i class="fa-solid fa-chevron-left" ></i>
+      </button>
+      <script>
+        function goBack() {
+          window.history.back();
+        }
+      </script>
+    <div class="top-half"></div>
+    <div class="container">
+    <ul class="item-list">
+    <li class="item"><i class="fa-solid fa-star" data-clicks="0" onclick="toggleStar(this)"style="color: #000fff;"></i> Harry Potter e a Pedra Filosofal</li>
+    <li class="item"><i class="fa-solid fa-star" data-clicks="0" onclick="toggleStar(this)"style="color: #000fff;"></i> Orgulho e Preconceito</li>
+    <li class="item"><i class="fa-solid fa-star" data-clicks="0" onclick="toggleStar(this)"style="color: #000fff;"></i> Além da teoria: Ciências aplicadas</li>
+    
+     <script>
+    function toggleStar(star) {
+        // Obtém o número atual de cliques
+        let clicks = star.dataset.clicks;
+        clicks++;
+    
+        // Atualiza o número de cliques no atributo
+        star.dataset.clicks = clicks;
+    
+        // Altera a cor da estrela a cada clique (você pode personalizar as cores)
+        if (clicks % 2 === 1) {
+            star.style.color ='#D8ECFF'; // Cor para número ímpar de cliques
+        } else {
+            star.style.color =' #000fff'; // Cor original
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #007aff;
+}
+
+.top-half {
+  flex: 0.5; /* Ocupa metade da altura */
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 30px 30px 0 0;
+  width: 100%;
+  flex: 1; /* Ocupa a metade inferior da tela */
+}
+
+.recommended {
+  padding-left: 20px; /* Adiciona espaço à direita */
+}
+
+.icon-container {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+}
+
+.fa {
+  font-size: 24px;
+  margin: 0 30px; /* Adiciona uma margem de 10 pixels à esquerda e à direita de cada ícone */
+}
+
+.icon1 {
+  position: fixed;
+  top: 10px; /* Ajusta a distância da borda superior */
+  right: 10px; /* Ajusta a distância da borda direita */
+  z-index: 1;
+}
+
+.word-container {
+  overflow-x: scroll;
+  white-space: nowrap; /* Prevents words from wrapping to the next line */
+  display: flex; /* Aligns words horizontally */
+}
+
+.word {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+  margin: 5px;
+}
+
+.titulo {
+  overflow-x: scroll; /* Permite rolagem horizontal */
+  white-space: nowrap;
+  height: 250px;
+  display: flex;
+
+  }
+  
+  .titulo img {
+  display: inline-block;
+  margin-left: 10%;
+  margin-top: 5%;
+  max-height: 160px;
+  padding: 5px;
+  }
+  
+  .caption {
+  position: relative;
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  display: flex;
+  word-wrap: break-word;
+  width: 100%;
+  white-space: normal;
+  margin-left: 10%;
+  }
+
+  .box{
+    max-width: 100%;
+  }
+
+  .swiper-wrapper{
+    display: flex;
+  }
+
+  .swiper-slide img {
+    width: 200px;
+    height: auto; /* Permite que a altura seja ajustada automaticamente para manter a proporção */
+  }
