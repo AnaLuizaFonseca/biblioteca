@@ -1,6 +1,6 @@
 #BibliotecaInteligente
 
-Para acessar o laravel e visualizar o funcionamento do banco de dados é necessário abrir a pasta Biblioteca Inteligente e abri-la com o Vs Code. Ao abrir, é preciso abrir o terminal e apertar "New Terminal"
+  Para acessar o laravel e visualizar o funcionamento do banco de dados é necessário abrir a pasta Biblioteca Inteligente e abri-la com o Vs Code. Ao abrir, é preciso abrir o terminal e apertar "New Terminal"
 Colocando os seguintes códigos depois:
 "cd biblioteca"
 "php artisan serve"
