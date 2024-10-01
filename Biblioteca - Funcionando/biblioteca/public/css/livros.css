@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    flex: 1; /* Ocupa a metade inferior da tela */
+    margin-top: -90px;
+  }
+  
+  .recommended {
+    padding-left: 20px; /* Adiciona espaço à direita */
+  }
+
+  .footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    background-color: white;
+    padding: 10px; /* Adiciona um pouco de espaço interno */
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+  }
+  
+  .icon-container a {
+    color: #333;
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    font-size: 24px;
+  }
+
+  .fa {
+    font-size: 24px;
+    margin: 0 30px; /* Adiciona uma margem de 10 pixels à esquerda e à direita de cada ícone */
+  }
+  
+  .icon1 {
+    position: fixed;
+    top: 10px; /* Ajusta a distância da borda superior */
+    margin-left: 9px; /* Ajusta a distância da borda direita */
+    z-index: 1;
+  }
+  
+  .book-container {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos em uma coluna */
+    align-items: center;
+    margin: 20px;
+}
+
+img {
+    width: 100%; /* Faz a imagem ocupar toda a largura disponível */
+    max-height: 390px; /* Limita a altura máxima da imagem */
+    object-fit: cover; /* Faz a imagem preencher todo o espaço disponível, recortando-a se necessário */
+}
+
+.book-info {
+    text-align: left; /* Centraliza o texto */
+    padding: 20px;
+    background-color: #c8e1fe; /* Adiciona um fundo claro para o conteúdo */
+    border-radius: 20px; /* Arredonda as bordas */
+}
+ 
+button {
+  background-color: #479af9; /* Adiciona um fundo claro para o conteúdo */
+  border: none;
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  color: rgb(255, 255, 255);
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  font-size: -50px;
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin-left: 300px;
+  
+ 
+}
+
+.avaliacao{
+  display: flex;
+ }
+.star-icon{
+  list-style-type: none;
+  border: 0px solid #0091ff;
+  cursor: pointer;
+  color: #0091ff;
+  font-size: 30px;/* alterar o tamanho das estrelas */
+  width: 20px;
+  display: inline-block;
+}
+.star-icon::before{
+  content: "\2605";
+}
+.star-icon.ativo ~ .star-icon::before{
+  content: "\2606";
+}
+.avaliacao:hover .star-icon::before{
+  content: "\2605";
+}
+.star-icon:hover ~ .star-icon::before{
+  content: "\2606";
+}
